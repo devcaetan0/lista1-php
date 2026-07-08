@@ -8,10 +8,10 @@ function calcularFormula($x, $y)
     return $resultado;
 }
 
-$x_coisado = 21;
-$y_coisado = 67;
+$xCoisado = 21;
+$yCoisado = 67;
 
-echo "O valor de X é " . $x_coisado;
-echo "<br> O valor de Y é " . $y_coisado;
-echo "<br> Resultado = " . calcularFormula($x_coisado, $y_coisado);
+echo "O valor de X é " . $xCoisado;
+echo "<br> O valor de Y é " . $yCoisado;
+echo "<br> Resultado = " . calcularFormula($xCoisado, $yCoisado);
 ?>

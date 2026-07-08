@@ -2,20 +2,20 @@
 function mascararCpf($cpf)
 {
     $tamanho = strlen($cpf);
-    $cpf_split = str_split($cpf);
+    $cpfSplit = str_split($cpf);
 
     for ($i = 0; $i < ($tamanho - 4); $i++) {
-        $cpf_split[$i] = "*";
+        $cpfSplit[$i] = "*";
     }
 
-    $cpf_formatado = implode("", $cpf_split);
+    $cpf_formatado = implode("", $cpfSplit);
 
     return $cpf_formatado;
 }
 
-$cpf_coisado = "12345678910";
+$cpfCoisado = "12345678910";
 
-echo "O CPF é: " . $cpf_coisado;
+echo "O CPF é: " . $cpfCoisado;
 
-echo mascararCpf($cpf_coisado);
+echo "<br> CPF Formatado: " . mascararCpf($cpfCoisado);
 ?>

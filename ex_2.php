@@ -1,10 +1,10 @@
 <?php
 function inverterTexto($texto)
 {
-    $str_invertida = strrev($texto);
+    $strInvertida = strrev($texto);
     $tamanho = strlen($texto);
 
-    return "<br> Texto invertido: " . $str_invertida . "<br> Caracteres: " . $tamanho;
+    return "<br> Texto invertido: " . $strInvertida . "<br> Caracteres: " . $tamanho;
 }
 
 echo $texto_coisado = "Coco seco do Caio Leite";

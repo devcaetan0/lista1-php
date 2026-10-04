@@ -2,15 +2,15 @@
 function mascararCpf($cpf)
 {
     $tamanho = strlen($cpf);
-    $cpfSplit = str_split($cpf);
+    $cpf = str_split($cpf);
 
     for ($i = 0; $i < ($tamanho - 4); $i++) {
-        $cpfSplit[$i] = "*";
+        $cpf[$i] = "*";
     }
 
-    $cpf_formatado = implode("", $cpfSplit);
+    $cpFormatado = implode("", $cpf);
 
-    return $cpf_formatado;
+    return $cpFormatado;
 }
 
 $cpfCoisado = "12345678910";

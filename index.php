@@ -22,21 +22,21 @@ $relatorio = processarPedido($produtos);
 <body>
     <h1>PHP - Lista 1</h1>
     <ul>
-        <li><a href="exercicios/ex_1.php">Exercício 1</a></li>
-        <li><a href="exercicios/ex_2.php">Exercício 2</a></li>
-        <li><a href="exercicios/ex_3.php">Exercício 3</a></li>
-        <li><a href="exercicios/ex_4.php">Exercício 4</a></li>
-        <li><a href="exercicios/ex_5.php">Exercício 5</a></li>
-        <li><a href="exercicios/ex_6.php">Exercício 6</a></li>
-        <li><a href="exercicios/ex_7.php">Exercício 7</a></li>
-        <li><a href="exercicios/ex_8.php">Exercício 8</a></li>
-        <li><a href="exercicios/ex_9.php">Exercício 9</a></li>
-        <li><a href="exercicios/ex_10.php">Exercício 10</a></li>
-        <li><a href="exercicios/ex_11.php">Exercício 11</a></li>
-        <li><a href="exercicios/ex_12.php">Exercício 12</a></li>
-        <li><a href="exercicios/ex_13.php">Exercício 13</a></li>
-        <li><a href="exercicios/ex_14.php">Exercício 14</a></li>
-        <li><a href="exercicios/ex_15.php">Exercício 15</a></li>
+        <li><a href="exercicios/ex1.php">Exercício 1</a></li>
+        <li><a href="exercicios/ex2.php">Exercício 2</a></li>
+        <li><a href="exercicios/ex3.php">Exercício 3</a></li>
+        <li><a href="exercicios/ex4.php">Exercício 4</a></li>
+        <li><a href="exercicios/ex5.php">Exercício 5</a></li>
+        <li><a href="exercicios/ex6.php">Exercício 6</a></li>
+        <li><a href="exercicios/ex7.php">Exercício 7</a></li>
+        <li><a href="exercicios/ex8.php">Exercício 8</a></li>
+        <li><a href="exercicios/ex9.php">Exercício 9</a></li>
+        <li><a href="exercicios/ex10.php">Exercício 10</a></li>
+        <li><a href="exercicios/ex11.php">Exercício 11</a></li>
+        <li><a href="exercicios/ex12.php">Exercício 12</a></li>
+        <li><a href="exercicios/ex13.php">Exercício 13</a></li>
+        <li><a href="exercicios/ex14.php">Exercício 14</a></li>
+        <li><a href="exercicios/ex15.php">Exercício 15</a></li>
     </ul>
 
     <div>

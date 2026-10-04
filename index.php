@@ -1,3 +1,15 @@
+<?php
+include("desafio.php");
+
+$produtos = [
+    ["nome" => "Notebook", "quantidade" => 1, "valor_unitario" => 1200],
+    ["nome" => "Mouse", "quantidade" => 2, "valor_unitario" => 80],
+    ["nome" => "Teclado", "quantidade" => 1, "valor_unitario" => 150]
+];
+
+$relatorio = processarPedido($produtos);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,6 +38,28 @@
         <li><a href="exercicios/ex_14.php">Exercício 14</a></li>
         <li><a href="exercicios/ex_15.php">Exercício 15</a></li>
     </ul>
+
+    <div>
+        <h2>DESAFIO</h2>
+        <p>Produtos diferentes: <?= $relatorio["produtos_diferentes"] ?></p>
+        <p>Itens comprados: <?= $relatorio["itens"] ?></p>
+        <p>Produto mais caro: <?= $relatorio["produto_mais_caro"] ?></p>
+        <p>Maior subtotal: <?= $relatorio["produto_maior_subtotal"]["nome"] ?> - R$
+            <?= $relatorio["produto_maior_subtotal"]["subtotal"] ?>
+        </p>
+
+        <h3>Subtotal de cada produto</h3>
+        <ul>
+            <?php foreach ($relatorio["subtotais"] as $produto) {
+                echo "<li>" . $produto["nome"] . ": R$ " . $produto["subtotal"] . "</li>";
+            } ?>
+        </ul>
+
+        <p>Subtotal da compra: R$ <?= $relatorio["subtotal_compra"] ?></p>
+        <p>Desconto: R$ <?= $relatorio["desconto"] ?></p>
+        <p>Frete: R$ <?= $relatorio["frete"] ?></p>
+        <p><strong>Valor final: R$ <?= $relatorio["valor_final"] ?></strong></p>
+    </div>
 </body>
 
 </html>

@@ -6,21 +6,21 @@ function analisarTexto($texto)
 	$vogais = 0;
 	$consoantes = 0;
 	$dentroDaPalavra = false;
-	$texto = strtolower($texto);
+	$texto = str_split(strtolower($texto));
 
-	foreach (str_split($texto) as $caractere) {
+	foreach ($texto as $caractere) {
 		$caracteres++;
 
-		if ($caractere === " ") {
+		if ($caractere == " ") {
 			$dentroDaPalavra = false;
-		} elseif (!$dentroDaPalavra) {
+		} else if (!$dentroDaPalavra) {
 			$palavras++;
 			$dentroDaPalavra = true;
 		}
 
-		if (strpos("aeiou", $caractere) !== false) {
+		if (strpos("aeiou", $caractere) != false) {
 			$vogais++;
-		} elseif (strpos("bcdfghjklmnpqrstvwxyzç", $caractere) !== false) {
+		} else if (strpos("bcdfghjklmnpqrstvwxyz", $caractere) != false) {
 			$consoantes++;
 		}
 	}
@@ -33,7 +33,7 @@ function analisarTexto($texto)
 	];
 }
 
-$textoCoisado = "Este texto tem algumas palavras.";
+$textoCoisado = "Beto Carrero me fez vomitar na roupa";
 $resultado = analisarTexto($textoCoisado);
 
 echo "Texto: " . $textoCoisado;

@@ -8,9 +8,9 @@ function mascararCpf($cpf)
         $cpf[$i] = "*";
     }
 
-    $cpFormatado = implode("", $cpf);
+    $cpfFormatado = implode("", $cpf);
 
-    return $cpFormatado;
+    return $cpfFormatado;
 }
 
 $cpfCoisado = "12345678910";

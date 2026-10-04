@@ -12,7 +12,7 @@ function gerarSenha($tamanho)
     return $senhaAleatoria;
 }
 
-$quantCaracteres = 21;
+$quantCaracteres = 67;
 $novaSenha = gerarSenha($quantCaracteres);
 
 echo "Quantidade de caracteres: " . $quantCaracteres;
